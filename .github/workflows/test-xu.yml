@@ -49,7 +49,7 @@ jobs:
           sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/; s/name="height" value="10KP"/name="height" value="128Kp"/; s/name="width" value="10KP"/name="width" value="128Kp"/; s/name="map" value="512MiB"/name="map" value="4GiB"/; s/name="memory" value="256MiB"/name="memory" value="2GiB"/' /etc/ImageMagick-6/policy.xml
       
       - name: Convert PDF to PNG
-        run: convert -density 900 -alpha off ./main/*.pdf -resize 15% -quality 50 cv_preview_%d.png
+        run: convert -density 900 -alpha off ./out/main.pdf -resize 15% -quality 50 cv_preview_%d.png
 
       - name: Commit PNG Files
         run: |
