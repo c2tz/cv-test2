@@ -72,7 +72,7 @@ jobs:
           echo "" >> README.md
           echo "| Preview - click on it to download |" >> README.md
           echo "| ---------- |" >> README.md
-          echo "| <a href="https://github.com/c2tz/cv-test2/releases/download/${{ env.NAME }}/Google_CV.pdf"><img src="https://raw.githubusercontent.com/c2tz/cv-test2/main/cv_preview_0.png" alt="CV Preview"></a> |" >> README.md
+          echo "| <a href="https://github.com/c2tz/cv-test2/releases/download/${{ env.NAME }}/main.pdf"><img src="https://raw.githubusercontent.com/c2tz/cv-test2/main/cv_preview_0.png" alt="CV Preview"></a> |" >> README.md
       
       - name: Commit README.md
         run: |
